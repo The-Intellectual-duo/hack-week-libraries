@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-my-lib',
+  //templateUrls
   template: `
     <p>
-      my-lib works!
+      Hello guys
     </p>
   `,
+  //stylesYrls
   styles: [
   ]
 })
