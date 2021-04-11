@@ -21,7 +21,7 @@ export class UpDownCounterComponent implements OnInit {
   }
 
   decrementCount() {
-    this.count -= this.value
+    this.count -= this.value;
   }
 
 }
