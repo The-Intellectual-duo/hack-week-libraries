@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {MyLibModule} from 'my-lib'
+import {MyLibModule} from 'projects/my-lib/src/lib/my-lib.module'
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    MyLibModule
+    MyLibModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
