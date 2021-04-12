@@ -3,6 +3,8 @@ import { MyLibComponent } from './my-lib.component';
 import { UpDownCounterComponent } from './up-down-counter/up-down-counter.component';
 import { ItemComponent } from './item/item.component';
 import { ItemsContainerComponent } from './items-container/items-container.component';
+import { CommonModule } from '@angular/common';
+import { WatchesComponent } from './watches/watches.component';
 
 
 
@@ -11,15 +13,18 @@ import { ItemsContainerComponent } from './items-container/items-container.compo
     MyLibComponent,
     UpDownCounterComponent,
     ItemComponent,
-    ItemsContainerComponent
+    ItemsContainerComponent,
+    WatchesComponent
   ],
   imports: [
+    CommonModule
   ],
   exports: [
     MyLibComponent,
     UpDownCounterComponent,
     ItemComponent,
-    ItemsContainerComponent
+    ItemsContainerComponent,
+    WatchesComponent
   ]
 })
 export class MyLibModule { }

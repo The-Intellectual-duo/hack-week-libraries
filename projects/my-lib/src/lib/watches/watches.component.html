@@ -1,0 +1,9 @@
+
+    <div>
+        <h1>Watches</h1>
+        <section class='items-container' *ngFor='let watch of watches'>
+            <img src={{watch.img}} alt={{watch.type}} />
+            <h3 >{{watch.type}}</h3>
+            <h3 >{{watch.price}}</h3>
+        </section>
+    </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 
 @Component({
@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   templateUrl: './items-container.component.html',
   styleUrls: ['./items-container.component.css']
 })
-export class ItemsContainerComponent {
-  itemArr : Object[] = [
+export class ItemsContainerComponent implements OnInit {
+  @Input() itemArr = [
     {
     imgSrc:'https://images.pexels.com/photos/2529147/pexels-photo-2529147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
       title:'Breds 11',
@@ -23,6 +23,14 @@ export class ItemsContainerComponent {
       price: 250000
     }
   ]
-
+  
+  getTitle() {
+    return this.itemArr.filter((item) => {
+      return item.title == 'Breds 11'
+    })
+  }
+  
+  ngOnInit(): void {
+  }
 
 }
