@@ -6,6 +6,8 @@ import { Component, Input } from '@angular/core';
   templateUrl: './items-container.component.html',
   styleUrls: ['./items-container.component.css']
 })
+
+
 export class ItemsContainerComponent {
   @Input() itemArr= [
     {
@@ -13,7 +15,7 @@ export class ItemsContainerComponent {
       title:'Breds 11',
       type: 'Men\s shoes',
       currency:'$',
-      price: 250
+      price: 250000
     },
     {
     imgSrc:'https://images.pexels.com/photos/2529146/pexels-photo-2529146.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -106,12 +108,6 @@ export class ItemsContainerComponent {
       price: 250000
     }
   ];
-
-  @Input() testArr=[
-      'test',
-      'test1',
-      'test2'
-    ]
 
   constructor(){
 
