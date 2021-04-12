@@ -1,11 +1,11 @@
+<div>
 <h1>Shoes</h1>
-<!-- angular mapping looks like this  -->
-<!-- <div *ngFor="let item of items"> -->
-<div class='items-container' >
-    <!-- example of changing value for the component -->
-    <item imgSrc='https://images.pexels.com/photos/2529146/pexels-photo-2529146.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'></item>
 
 
-<!-- then use one tag, like below, and the mapping takes care of the rest -->
-    <!-- <item imgSrc='{{imgSrc}}' title='{{item.title}}' type='{{item.type}}' currency='{{currencyType}}' price={{item.price}}></item> -->
+<section class='items-container'>
+
+    <!-- using the *ngFor, ItemsArr is being looped from the metadata -->
+    <item class='item' *ngFor='let item of itemArr' title={{item.title}} imgSrc={{item.imgSrc}} currency={{item.currency}} price={{item.price}} type={{item.type}}></item>
+
+</section>
 </div>

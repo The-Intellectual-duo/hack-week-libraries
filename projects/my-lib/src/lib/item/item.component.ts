@@ -15,6 +15,12 @@ export class ItemComponent implements OnInit {
   @Input() title: string = 'Red Smoke 11s'
   //Shoe type
   @Input() type: string = 'Men\'s Shoe'
+
+  //used for filter
+  //shoe brand can be Jordan, Airforces, etc
+  @Input() shoeBrand = 'Jordan'
+  //show size
+  @Input() size: number;
   
 
   //if Shoe has a special feature, set special to true
@@ -27,7 +33,9 @@ export class ItemComponent implements OnInit {
   //Price amt
   @Input() price:string = '150'
 
-  constructor() { }
+  constructor() {
+    this.size = 9;
+   }
 
   ngOnInit(): void {
   }

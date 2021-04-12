@@ -1,0 +1,23 @@
+h1{
+    font-family: Broadway;
+    font-size: 45px;
+    text-align: center;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.16);
+}
+div{
+    border: solid #918C8B 4px;
+    border-radius: 5px;
+    background-color: #F5F1EF;
+}
+section{
+    position: relative;
+    right: 12px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+.item{
+    padding:5px;
+}

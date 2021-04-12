@@ -1,23 +1,22 @@
 import { NgModule } from '@angular/core';
 import { MyLibComponent } from './my-lib.component';
-import { UpDownCounterComponent } from './up-down-counter/up-down-counter.component';
 import { ItemComponent } from './item/item.component';
 import { ItemsContainerComponent } from './items-container/items-container.component';
+import {CommonModule} from '@angular/common'
 
 
 
 @NgModule({
   declarations: [
     MyLibComponent,
-    UpDownCounterComponent,
     ItemComponent,
     ItemsContainerComponent
   ],
   imports: [
+    CommonModule
   ],
   exports: [
     MyLibComponent,
-    UpDownCounterComponent,
     ItemComponent,
     ItemsContainerComponent
   ]

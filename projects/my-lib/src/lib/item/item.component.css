@@ -1,24 +1,46 @@
+@font-face {
+    font-family: 'Broadway';
+    src: url(./BroadwayRegular-7Bpow.ttf) format('truetype');
+}
+
 img{
-    border-radius: 5px;
+    border-radius: 1px;
     width: 250px;
     height: 350px;
 }
 div{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat();
-    width:450px;
-    border: solid black 2px;
+    grid-template-rows: 2fr 1fr 1fr;
+    width:250px;
+    border: solid #918C8B 4px;
     border-radius: 5px;
+    background-color: #F5F1EF;
+    box-shadow: 4px 5px rgba(0, 0, 0, 0.16);
 }
 img{
     grid-row: 1 / span 3;
-    grid-column: 1;
 }
 h3{
     display: block;
     margin:0;
+    margin-bottom: 3px;
+    margin-left: 4px;
     margin-top: 5px;
     height: 35px;
-
+    font-size: 30px;
+    font-family: Broadway;
+}
+h4{
+    font-size: 18px;
+    margin:0px;
+    margin-top: 3px;
+    margin-left: 4px;
+    font-family: Broadway;
+}
+.price{
+    margin: 0%;
+    margin-top: 3px;
+    font-size: 17px;
+    margin-left: 4px;
+    font-family: Broadway;
 }
